@@ -1,0 +1,167 @@
+﻿@model ClassLibraryDiploma.ListDepartmentSectionEquipment
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" />
+<style>
+
+
+    input {
+        width: 300px;
+        height: 40px;
+        text-align: center;
+        margin-top: 20px
+    }
+
+
+
+    #button {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        width: 150px;
+        height: 40px;
+        background-color: #5d1aed;
+        color: white;
+        border-radius: 20px;
+        font-size: 16px;
+    }
+
+        #button:active {
+            background: #1b0087;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            font-size: 14px;
+        }
+
+    input {
+        width: 300px;
+        height: 40px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    body {
+        margin: 0;
+        font-family: arial;
+        background: url(../../Content/Images/Stanok.jpg) no-repeat center center fixed;
+        background-size: 100%;
+        min-height: 100%;
+        display: grid;
+        grid-template-rows: 1fr auto;
+        background-size: cover;
+    }
+
+    header {
+        background-color: #000;
+        width: 100%;
+        height: 120px;
+        text-align: center;
+        padding-top: 20px;
+        margin: 0px;
+    }
+
+    footer {
+        background-color: black;
+        width: 100%;
+        height: 50px;
+        margin-top: 265px;
+        color: white;
+        text-align: center;
+        padding-top: 30px;
+        font-size: 18px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+
+
+    .Pozi {
+        margin-left: 3%;
+    }
+
+    a {
+        font-family: Arial;
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+    }
+
+        a:hover {
+            background-color: beige;
+            border-radius: 20px;
+            color: firebrick;
+        }
+</style>
+<body>
+    <header style="align-content:center; text-align:center;">
+        <div style="padding:0px; text-align:center; margin-left:5%">
+            <img src="~/Content/Images/SlonikLogo.jpg" style="width: 4%; margin:
+             0px; float: left; border-radius: 50px; margin-top: -0.5%">
+            <p style="color: white; float: left; font-family: arial; font-size:
+            30px;margin: 0; margin-left: 0.5%; ">Slonik working</p>
+        </div>
+
+        <div style="display:inline-block; padding:0; margin-left:0%; margin-top:0.7%">
+            <a href="~/Robotnik/IndexRospred">Главная</a>
+            <a href="~/Section/SectionList_Rospred">Участки</a>
+            <a href="~/Equipment/EquipmentList_Rospred">Оборудование</a>
+            <a href="~/Robotnik/ProizvodkListGet">Рабочие</a>
+            <a href="~/Working/RegisterWorking">Создать задание</a>
+            <a href="~/Working/WorkingsList">Все задания</a>
+            <a href="~/Robotnik/ReposttList">Отчёт</a>
+            <a href="~/Home/Exit">Выход</a>
+        </div>
+    </header>
+
+
+    <div style="        background-color: #ccc8c8;
+        border: solid;
+        border-color: black;
+        padding: 3%;
+        margin: 3%;
+        border-radius: 25px;
+        box-shadow: 0px 0px 5px 1px black;">
+        <h2>Список Участков </h2>
+        <table class="table table-bordered">
+            <tr>
+
+                <td>Участки </td>
+                <td>Цех</td>
+                <td>Шифр</td>
+
+
+                <td>
+                </td>
+            </tr>
+            @foreach (var listSections in Model.Sections)
+
+            {
+
+                <tr>
+
+
+                    <td>@listSections.Name</td>
+
+                    @foreach (var listDepartments in Model.departments)
+
+                    {
+                        @if (listSections.DepartmentId == listDepartments.Id)
+                        {
+                            <td>@listDepartments.Name</td>
+                            <td>@listDepartments.IdDepartment</td>
+
+                        }
+                    }
+
+
+                </tr>
+
+
+
+            }
+        </table>
+
+
+    </div>
+
+</body>

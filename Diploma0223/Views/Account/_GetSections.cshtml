@@ -1,0 +1,11 @@
+﻿
+@{
+    Layout = null;
+}
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@ <label for="SctionId"></label>
+<label> Учачасток </label>
+<br />
+@*<input asp-for="Uchastok" />*@
+<select style="font-size:16px" asp-items="@(ViewBag.Sections as SelectList)" name="SectionId" id="SectionId" onchange="onDepartmentChange(event)"></select>

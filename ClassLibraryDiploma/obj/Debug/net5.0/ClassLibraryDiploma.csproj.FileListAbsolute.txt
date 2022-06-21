@@ -1,0 +1,12 @@
+D:\ASP.Net\Диплом ШАГ\Diploma0223\ClassLibraryDiploma\bin\Debug\net5.0\ClassLibraryDiploma.deps.json
+D:\ASP.Net\Диплом ШАГ\Diploma0223\ClassLibraryDiploma\bin\Debug\net5.0\ClassLibraryDiploma.dll
+D:\ASP.Net\Диплом ШАГ\Diploma0223\ClassLibraryDiploma\bin\Debug\net5.0\ref\ClassLibraryDiploma.dll
+D:\ASP.Net\Диплом ШАГ\Diploma0223\ClassLibraryDiploma\bin\Debug\net5.0\ClassLibraryDiploma.pdb
+D:\ASP.Net\Диплом ШАГ\Diploma0223\ClassLibraryDiploma\obj\Debug\net5.0\ClassLibraryDiploma.csproj.AssemblyReference.cache
+D:\ASP.Net\Диплом ШАГ\Diploma0223\ClassLibraryDiploma\obj\Debug\net5.0\ClassLibraryDiploma.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASP.Net\Диплом ШАГ\Diploma0223\ClassLibraryDiploma\obj\Debug\net5.0\ClassLibraryDiploma.AssemblyInfoInputs.cache
+D:\ASP.Net\Диплом ШАГ\Diploma0223\ClassLibraryDiploma\obj\Debug\net5.0\ClassLibraryDiploma.AssemblyInfo.cs
+D:\ASP.Net\Диплом ШАГ\Diploma0223\ClassLibraryDiploma\obj\Debug\net5.0\ClassLibraryDiploma.csproj.CoreCompileInputs.cache
+D:\ASP.Net\Диплом ШАГ\Diploma0223\ClassLibraryDiploma\obj\Debug\net5.0\ClassLibraryDiploma.dll
+D:\ASP.Net\Диплом ШАГ\Diploma0223\ClassLibraryDiploma\obj\Debug\net5.0\ref\ClassLibraryDiploma.dll
+D:\ASP.Net\Диплом ШАГ\Diploma0223\ClassLibraryDiploma\obj\Debug\net5.0\ClassLibraryDiploma.pdb

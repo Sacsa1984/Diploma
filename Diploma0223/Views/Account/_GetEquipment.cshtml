@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Equipment>
+
+    @{
+        Layout = null;
+    } <label>Оборудование</label>
+    <br />
+    @*<input asp-for="Uchastok" />*@
+
+    @foreach (var equip in Model)
+    {
+
+        <div style="margin-top:auto">
+            <div>
+
+                <input style="-webkit-transform: scale(0.5); font-size: 20px;" type="checkbox" name="equips" value="@equip.Id" />
+
+                <div style="margin:-30px -10px 10px 20px">
+                    @equip.Name
+                    <h4>INN</h4>
+                    @equip.INN
+                    <hr>
+
+                  
+                </div>
+
+
+            </div>
+
+        </div>
+    }
+
+
